@@ -202,6 +202,18 @@ When disabling the cache, it can be useful to specify a default tab to load whic
 </tabs>
 ```
 
+## Select a tab programmatically
+
+To select tab programmatically use `selectTab(tabHash)` method. Remember, you have to add a `#` symbol to tab hash.
+
+```html
+<tabs ref="tabs"></tabs>
+```
+
+```js
+this.$refs.tabs.selectTab('#second-tab');
+```
+
 ### CSS
 
 You can use the [CSS](docs/resources/tabs-component.css) from the docs as a starting point for your own styling.
